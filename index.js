@@ -3,12 +3,10 @@ const app = express();
 const cors = require('cors');
 require('dotenv').config();
 
-const { v4: uuidv4 } = require('uuid');
 const mongoose = require('mongoose');
 
 // mongoose models
 const User = require('./models/user');
-const { request, response } = require('express');
 const Log = require('./models/sessionLog').Log;
 
 app.use(cors());
